@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 2px solid black;
+      }
+      .box1 {
+        border: 2px solid red;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-bottom: 20px;
+        margin-right: auto;
+        padding: 10px;
+        text-align: center;
+        line-height: 100px;
+        visibility: hidden;
+      }
+      .box2 {
+        border: 2px solid blue;
+        width: 100px;
+        margin: 20px;
+        box-sizing: border-box;
+        /* sizing을 border-box 로 했을 때 조금줄어드는데 */
+        /* 이유 : border(content+padding+border)까지 합해서 100으로 만드려하기때문에 content 크기가 줄어든다 */
+        padding: 10px;
+        /* borderline 넘어갔을때 밑으로 내림 */
+        overflow-wrap: break-word;
+        /* line 넘은것 가림 */
+        overflow: hidden;
+      }
+      /* 마진 상쇄  => 인접해 있는 마진에 대해서 양쪽 각각 적용되는 것이 아니라 */
+      /* 둘 중 큰 값만 취한다 ex) 위쪽 아래 마진 30, 아래쪽 위마진 20 => 둘 사이 마진 50이 아니라 30 */
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <span>contents</span>
+    </div>
+    <div class="box2">contentsdddddddddddddddddddddddddddddd</div>
+  </body>
+</html>
