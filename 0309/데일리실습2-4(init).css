@@ -1,0 +1,30 @@
+.row {
+    display: flex;
+    
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+   
+  }
+  .row:nth-child(odd) > .cell:nth-child(even) {
+    background-color: black;
+  }
+  .row:nth-child(even) > .cell:nth-child(odd) {
+    background-color: black;
+  }
+.row img{
+  position: absolute;
+  height: 100px;
+}
+#king{
+  left: 400px;
+}
+#queen{
+  left: 300px;
+}
+#rook{
+  left: 700px;
+}

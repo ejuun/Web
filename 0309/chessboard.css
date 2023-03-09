@@ -5,6 +5,7 @@
   width: 100px;
   height: 100px;
   border: 1px solid black;
+ 
 }
 .row:nth-child(odd) > .cell:nth-child(even) {
   background-color: black;
