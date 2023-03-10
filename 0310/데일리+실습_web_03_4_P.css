@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+nav img{
+  height: 80px;
+}
+header{
+  height: 500px;
+  background-image: url('ssafy_logo\ \(1\).png');
+  background-size: cover;
+}
